@@ -1,0 +1,28 @@
+@model genuineparts.Models.User
+
+@{
+    ViewData["Title"] = "Create User";
+}
+
+<h2>Create User</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control"/>
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control"/>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add User</button>
+    <a asp-action="Page" class="btn btn-secondary">Back to Users</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
