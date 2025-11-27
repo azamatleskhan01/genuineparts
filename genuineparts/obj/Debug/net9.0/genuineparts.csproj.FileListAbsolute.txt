@@ -48,7 +48,6 @@
 /Users/azamatleshan/RiderProjects/genuineparts/genuineparts/obj/Debug/net9.0/compressed/bwdc1z58z1-j5mq2jizvt.gz
 /Users/azamatleshan/RiderProjects/genuineparts/genuineparts/obj/Debug/net9.0/compressed/y5g3u12awc-06098lyss8.gz
 /Users/azamatleshan/RiderProjects/genuineparts/genuineparts/obj/Debug/net9.0/compressed/2qwqjxzq87-nvvlpmu67g.gz
-/Users/azamatleshan/RiderProjects/genuineparts/genuineparts/obj/Debug/net9.0/compressed/uu5y5x1d46-s35ty4nyc5.gz
 /Users/azamatleshan/RiderProjects/genuineparts/genuineparts/obj/Debug/net9.0/compressed/zsejl4v08g-pj5nd1wqec.gz
 /Users/azamatleshan/RiderProjects/genuineparts/genuineparts/obj/Debug/net9.0/compressed/ra2098miv4-46ein0sx1k.gz
 /Users/azamatleshan/RiderProjects/genuineparts/genuineparts/obj/Debug/net9.0/compressed/lrsmtrr1xi-v0zj4ognzu.gz
@@ -194,3 +193,5 @@
 /Users/azamatleshan/RiderProjects/genuineparts/genuineparts/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /Users/azamatleshan/RiderProjects/genuineparts/genuineparts/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /Users/azamatleshan/RiderProjects/genuineparts/genuineparts/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/azamatleshan/RiderProjects/genuineparts/genuineparts/obj/Debug/net9.0/genuineparts.sourcelink.json
+/Users/azamatleshan/RiderProjects/genuineparts/genuineparts/obj/Debug/net9.0/compressed/uu5y5x1d46-n4246tw85c.gz
