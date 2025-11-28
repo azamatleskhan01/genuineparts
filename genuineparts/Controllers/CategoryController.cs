@@ -1,6 +1,7 @@
 using genuineparts.Data;
 using genuineparts.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace genuineparts.Controllers
@@ -27,6 +28,7 @@ namespace genuineparts.Controllers
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Category created";
                 return RedirectToAction("Result");
             }
             return View();
@@ -57,9 +59,40 @@ namespace genuineparts.Controllers
             {
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Category Updated";
+
                 return RedirectToAction("Result");
             }
             return View();
+        }
+        
+        
+        
+        public IActionResult Delete(int? id)
+        {
+            if(id == null || id == 0){return NotFound();}
+            Category? categoryFromDb = _db.Categories.Find(id);
+            //   Category? categoryFromDb1 = _db.Categories.FirstOrDefault(c => c.Id == id);
+            // Category? categoryFromDb2 = _db.Categories.Where(c => c.Id == id).FirstOrDefault();
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+                
+            }
+            return View(categoryFromDb);
+        }
+        
+
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeletePost(int? id)
+        {
+            Category? categoryFromDb = _db.Categories.Find(id);
+            
+            if(categoryFromDb == null){return NotFound();}
+            _db.Categories.Remove(categoryFromDb);
+            _db.SaveChanges();
+            TempData["success"] = "Category deleted";
+            return RedirectToAction("Result");
         }
     }
 }

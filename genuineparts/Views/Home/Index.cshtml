@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home";
+ViewData["Title"] = "Home";
 }
 
 <!DOCTYPE html>
@@ -7,90 +7,104 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewData["Title"]</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f7f9fc;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f3f6fa;
+            padding: 30px;
             margin: 0;
-            padding: 20px;
             color: #333;
         }
-        h1 {
-            text-align: center;
-            color: #2b4c7e;
-            margin-bottom: 10px;
-        }
-        p {
-            text-align: center;
-            margin-bottom: 25px;
-            color: #555;
-        }
-        .grid {
-            max-width: 700px;
+
+        .container {
+            max-width: 900px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 15px;
-        }
-        .item {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid #e2e6ed;
             text-align: center;
+        }
+
+        h1 {
+            color: #1a3d7c;
+            margin-bottom: 5px;
+        }
+
+        p.subtitle {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .parts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .part-card {
+            background: #fff;
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
             transition: 0.2s ease;
         }
-        .item:hover {
-            background: #eef3ff;
-            transform: translateY(-3px);
+
+        .part-card:hover {
+            background: #eaf1ff;
+            transform: translateY(-4px);
         }
-        .name {
-            font-size: 1rem;
+
+        .part-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
         }
-        .price {
-            margin-top: 5px;
+
+        .part-price {
+            color: #1a3d7c;
             font-weight: bold;
-            color: #2b4c7e;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Welcome to Geniune Parts</h1>
-    <p>Simple and clean auto parts catalog.</p>
+<div class="container">
+    <h1>Welcome to GenuineParts</h1>
+    <p class="subtitle">Quality auto parts. Simple interface.</p>
 
-    <div class="grid">
-        <div class="item">
-            <div class="name">Brake Pads</div>
-            <div class="price">$45</div>
+    <div class="parts-grid">
+
+        <div class="part-card">
+            <div class="part-name">Brake Pads</div>
+            <div class="part-price">$45</div>
         </div>
 
-        <div class="item">
-            <div class="name">Air Filter</div>
-            <div class="price">$15</div>
+        <div class="part-card">
+            <div class="part-name">Air Filter</div>
+            <div class="part-price">$15</div>
         </div>
 
-        <div class="item">
-            <div class="name">Oil Filter</div>
-            <div class="price">$10</div>
+        <div class="part-card">
+            <div class="part-name">Oil Filter</div>
+            <div class="part-price">$10</div>
         </div>
 
-        <div class="item">
-            <div class="name">Spark Plug</div>
-            <div class="price">$8</div>
+        <div class="part-card">
+            <div class="part-name">Spark Plug</div>
+            <div class="part-price">$8</div>
         </div>
 
-        <div class="item">
-            <div class="name">Car Battery</div>
-            <div class="price">$85</div>
+        <div class="part-card">
+            <div class="part-name">Car Battery</div>
+            <div class="part-price">$85</div>
         </div>
 
-        <div class="item">
-            <div class="name">Headlight</div>
-            <div class="price">$60</div>
+        <div class="part-card">
+            <div class="part-name">Headlight</div>
+            <div class="part-price">$60</div>
         </div>
+
     </div>
+</div>
 
 </body>
 </html>
