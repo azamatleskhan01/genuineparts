@@ -52,16 +52,6 @@ namespace genuineparts.Controllers
         {
             return View();
         }
-
-        // Дополнительные страницы (необязательно)
-        public IActionResult About()
-        {
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            return View();
-        }
+        
     }
 }

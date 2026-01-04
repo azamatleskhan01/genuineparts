@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("genuineparts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+083795893e034adc5d25295d8bf37bbd74ba77f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41f250f3849f2479a0f5b844ecba46138e2ae17c")]
 [assembly: System.Reflection.AssemblyProductAttribute("genuineparts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("genuineparts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
